@@ -1,11 +1,11 @@
 --- 
  - hosts: tag_name_DEV_nginx
  - name:  nginx assignment 
-   import_playbook: ../static-assignments/nginx.yaml    
+   import_playbook: ../static-assignments/nginx.yml
 
  - hosts: tag_name_DEV_tooling
  - name: Tooling assignment
-   import_playbook: ../static-assignments/tooling.yaml
+   import_playbook: ../static-assignments/tooling.yml
 
  - hosts: tag_name_DEV_tooling
  - name: Tooling assignment
@@ -15,13 +15,13 @@
  
  - hosts: tag_name_DEV_tooling
  - name: Tooling assignment
-   import_playbook: ../static-assignments/jenkins.yaml
+   import_playbook: ../static-assignments/jenkins.yml
 
  - hosts: tag_name_DEV_tooling
  - name: Tooling assignment
-   import_playbook: ../static-assignments/jfrog.yaml
+   import_playbook: ../static-assignments/jfrog.yml
 
  - hosts: tag_name_DEV_tooling
  - name: Tooling assignment
-   import_playbook: ../static-assignments/sonar.yaml
+   import_playbook: ../static-assignments/sonar.yml
 
