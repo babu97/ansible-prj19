@@ -15,7 +15,7 @@ filters:
     - DEV-bastion
     - DEV-nginx
     - DEV-tooling
-    - DEV-wordpress
+    - Dev-wordpress
     - DEV-sonarqube
     - DEV-artifactory
     - DEV-Jenkins
