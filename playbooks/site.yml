@@ -1,0 +1,27 @@
+--- 
+ - hosts: tag_name_DEV_nginx
+ - name:  nginx assignment 
+   import_playbook: ../static-assignments/nginx.yaml    
+
+ - hosts: tag_name_DEV_tooling
+ - name: Tooling assignment
+   import_playbook: ../static-assignments/tooling.yaml
+
+ - hosts: tag_name_DEV_tooling
+ - name: Tooling assignment
+   import_playbook: ../static-assignments/wordpress.yaml
+
+
+ 
+ - hosts: tag_name_DEV_tooling
+ - name: Tooling assignment
+   import_playbook: ../static-assignments/jenkins.yaml
+
+ - hosts: tag_name_DEV_tooling
+ - name: Tooling assignment
+   import_playbook: ../static-assignments/jfrog.yaml
+
+ - hosts: tag_name_DEV_tooling
+ - name: Tooling assignment
+   import_playbook: ../static-assignments/sonar.yaml
+

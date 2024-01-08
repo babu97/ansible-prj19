@@ -1,0 +1,5 @@
+---
+- hosts: tag_Name_DEV_Jenkins
+  become: true
+  roles:
+     - jenkins
