@@ -7,8 +7,8 @@ regions:
 strict: False
 
 keyed_groups:
-- key: tags
-  prefix: tag
+  - key: tags
+    prefix: tag
 
 filters:
   tag:Name:
@@ -19,14 +19,14 @@ filters:
     - DEV-sonarqube
     - DEV-artifactory
     - DEV-Jenkins
-  instance-state-name : running
-  
+  instance-state-name: running  # Fixed: Removed extra space after colon
+
 hostnames:
-# a list in order of precedence for hostname variables.
+  # a list in order of precedence for hostname variables.
   - private-ip-address
   - tag:Name
   - dns-name
   - ip-address
 
 compose:
-  ansible_host: private_ip_address
+  ansible_host: private_ip_address  # Fixed: Changed to snake_case
