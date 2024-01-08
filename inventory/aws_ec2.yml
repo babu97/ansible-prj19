@@ -19,14 +19,14 @@ filters:
     - DEV-sonarqube
     - DEV-artifactory
     - DEV-Jenkins
-  instance-state-name: running  # Fixed: Removed extra space after colon
+  instance-state-name: running
 
 hostnames:
-  # a list in order of precedence for hostname variables.
+  # A list in order of precedence for hostname variables.
   - private-ip-address
   - tag:Name
   - dns-name
   - ip-address
 
 compose:
-  ansible_host: private_ip_address  # Fixed: Changed to snake_case
+  ansible_host: private_ip_address
