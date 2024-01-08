@@ -12,13 +12,13 @@ keyed_groups:
 
 filters:
   tag:Name:
-    - DEV-bastion
-    - DEV-nginx
-    - DEV-tooling
-    - DEV-wordpress
-    - DEV-sonarqube
-    - DEV-artifactory
-    - DEV-Jenkins
+     DEV-bastion
+     DEV-nginx
+     DEV-tooling
+     DEV-wordpress
+     DEV-sonarqube
+     DEV-artifactory
+     DEV-Jenkins
   instance-state-name: running
 
 hostnames:
